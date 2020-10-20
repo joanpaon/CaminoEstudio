@@ -1,13 +1,11 @@
 <pre>
 
 Project .....: CaminoEstudio
-Summary .....: Java 8 | Netbeans 8.2 | Programas - Expresiones #04
+Summary .....: Java 11 | Netbeans 12.1 | Programas - Expresiones #04
 Creation ....: 26/10/2016
-Modification : 
-Version .....: 
 Author ......: José A. Pacheco Ondoño - joanpaon@gmail.com
-Platform ....: Java 8
-IDE .........: NetBeans 8.2
+Platform ....: Java 11  
+IDE .........: NetBeans 12.1
 Remote ......: https://github.com/joanpaon/CaminoEstudio.git
 
 </pre>

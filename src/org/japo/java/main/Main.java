@@ -24,16 +24,17 @@ import java.util.Scanner;
  */
 public class Main {
 
+    public static final Scanner SCN
+            = new Scanner(System.in, "Windows-1252")
+                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // Constantes
-        final double CAMINO = 980;
-        
-        // Objeto Scanner
-        Scanner scn = new Scanner(System.in);
-        scn.useLocale(Locale.ENGLISH);
+//        final double CAMINO = 980;
+        final double CAMINO = 100;
 
         // Variables
         double traslado;
@@ -42,18 +43,19 @@ public class Main {
         try {
             // Recorrido diario
             System.out.print("Desplazamiento diario (km) ...: ");
-            traslado = scn.nextDouble();
-            scn.nextLine();
+            traslado = SCN.nextDouble();
 
             // Jornadas
             jornadas = CAMINO / traslado;
 
             // Mensaje
             System.out.printf(Locale.ENGLISH,
-                    "Días de Clases/Camino ........: %.0f\n", jornadas);
+                    "Días de Clases/Camino ........: %d%n",
+                    (int) jornadas < jornadas ? (int) jornadas + 1 : (int) jornadas);
         } catch (Exception e) {
             System.out.println("Error de entrada");
-            scn.nextLine();
+        } finally {
+            SCN.nextLine();
         }
     }
 }
